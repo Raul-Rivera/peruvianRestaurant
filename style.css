@@ -1,0 +1,314 @@
+html {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgb(0 0 0 / 7%);
+}
+
+body {
+    font-size: 15px;
+}
+
+body {
+    background-image: url(./images/textiles.jpg);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+.peru {
+    display: block;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 5px 0;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-shadow: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+button {
+    background: #f50808;
+    background-image: -webkit-linear-gradient(top, #f50808, #f0d3d3);
+    background-image: -moz-linear-gradient(top, #f50808, #f0d3d3);
+    background-image: -ms-linear-gradient(top, #f50808, #f0d3d3);
+    background-image: -o-linear-gradient(top, #f50808, #f0d3d3);
+    background-image: linear-gradient(to bottom, #f50808, #f0d3d3);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 37px;
+    padding: 22px 32px 20px 30px;
+    border: solid #ffc800 2px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+.menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.menu a {
+    background: var(--yellow);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.top {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "hero hero cta1"
+        "hero hero cta2";
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 500px;
+    background: white url(images/pollo1.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero > * {
+    background: var(--yellow);
+    padding: 5px;
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta {
+    background: var(--yellow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cta p {
+    margin: 0;
+}
+
+.price {
+    font-size: 60px;
+    font-weight: 300;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.features {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+}
+
+.feature .icon {
+    font-size: 50px;
+}
+
+.feature p {
+    color: rgb(187, 23, 23);
+}
+
+.about {
+    background: white;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    align-items: center;
+}
+
+.about__mockup {
+    padding-right: 70px;
+}
+
+img {
+    max-width: 100%;
+    height: 350px;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery h2 {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.gallery h2:after {
+    --direction: right;
+}
+
+.gallery h2:before, .gallery h2:after {
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(to var(--direction, left), var(--yellow), transparent);
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+:root {
+    --yellow: #e61f1f;
+    --black: #141414;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px rgb(233, 198, 102);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        perspective: 800px;
+    }
+
+    [aria-controls="menu-list"] {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    [aria-expanded="false"] .close {
+        display: none;
+    }
+
+    .menu ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0.5s;
+    }
+}
+
+
+.bulb {
+    text-align: center;
+    padding: 100px;
+    color: white;
+    font-size: 20px;
+}
+
+.bulb img{
+    text-align: center;
+    height: 400px;
+    width: 250px;
+}
